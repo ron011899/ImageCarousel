@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam0.jpg" alt="cars" width="100%">
+        </div>
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam1.jpg" alt="cars" width="100%">
+        </div>
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam2.jpg" alt="cars" width="100%">
+        </div>
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam3.jpg" alt="cars" width="100%">
+        </div>
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam4.jpg" alt="cars" width="100%">
+        </div>
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam5.jpg" alt="cars" width="100%">
+        </div>
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam6.jpg" alt="cars" width="100%">
+        </div>
+        <div class="img fade">
+            <img src="/javascript projects/img carousel/cars-img/Lam7.jpg" alt="cars" width="100%">
+        </div>
+
+        <i id="prev" onclick="image_show(-1)" class="fa-solid fa-caret-left"></i>
+        <i id="next" onclick="image_show(1)" class="fa-solid fa-caret-right"></i>
+
+        <div class="dots">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

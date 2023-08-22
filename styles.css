@@ -1,0 +1,75 @@
+body{
+    background-color: #8a8a8a;
+    overflow: hidden;
+}
+.container{
+    width: 70%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+}
+#prev{
+    position: absolute;
+    color: white;
+    top: 43%;
+    left: 0;
+    font-size: 50px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.7s ease;
+    user-select: none;
+}
+#next{
+    position: absolute;
+    color: white;
+    top: 43%;
+    right: 0;
+    font-size: 50px;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    padding: 10px;
+    transition: 0.8s ease;
+    user-select: none;
+}
+#prev:hover, #next:hover{
+    background-color: rgba(0, 0, 0, 0.516);
+}
+.img{
+    display: none;
+}
+.dots{
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+.dot{
+    background-color: rgb(67, 67, 67);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: background-color 0.8s ease;
+
+}
+.active{
+    background-color: rgb(18, 17, 17);
+}
+
+.fade{
+    animation: fade 1.5s;
+}
+
+@keyframes fade{
+    from{opacity: 0.5}
+    to{opacity: 1}
+}
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+    }
+}
